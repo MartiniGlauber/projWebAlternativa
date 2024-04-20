@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternativa Autolocadora</title>
+    <!--CSS GERAL-->
+    <link href="src/css/style.css" rel="stylesheet">
+    <!--FAVICON-->
+    <link rel="icon" href="src/imagens/favicon-alternativa.png">
+    <!--GOOGLE ICONS-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+</head>
+<body>
+    <header>
+            <!--LOGO-->
+            <img src="src/imagens/logo.png" alt="Logo Alternativa Autolocadora" class="logo">
+
+            <!--MENU DE NAVEGAÇÃO (LINKS)-->
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#para-empresas">Para Empresas</a></li>
+                    <li><a href="#requisitos-para-locacao">Requisitos para Locação</a></li>
+                    <li><a href="#promocoes">Promoções</a></li>
+                    <li><a href="#localizacao">Localização</a></li>
+                    <li><a href="#fale-conosco">Fale Conosco</a></li>
+                </ul>                   
+            </nav>
+        <div>
+            <!--CARROSEL TIPOS CARROS-->
+            <section class="banner cycle-slideshow"    
+            data-cycle-fx="scrollHorz"
+            data-cycle-speed="1000"
+            data-cycle-prev="#prev"
+            data-cycle-next="#next">
+
+            <img src="src/imagens/compactos.png" alt="imagem compactos" class="banner">
+            <img src="src/imagens/hatch.png" alt="imagem hatches" class="banner">
+            <img src="src/imagens/sedanCompacto.png" alt="imagem sedans compactos" class="banner">
+            <img src="src/imagens/suv.png" alt="imagem suv" class="banner">
+            <img src="src/imagens/pickup.png" alt="imagem pick ups" class="banner">
+            </section>
+            <div id="controles">
+                <img src="src/img/seta-esquerda.png" alt="" id="prev">
+                <img src="src/img/seta-direita.png" alt="" id="next">
+            </div>
+        </div>
+        <section id="container-reserva">
+            <!--MENU DATA LOCACAO-->
+            <form action="">
+                <select>
+                    <option>--Retire em--</option>
+                    <option>No Aeroporto</option>
+                    <option>Na Rodoviária</option>
+                    <option>Na Alternativa Autolocadora</option>
+                    <option>Na Minha Residência</option>
+                    <option>Outros</option>
+                </select>
+                <input type="date">
+                <input type="time">
+                <input type="date">
+                <input type="time">
+                <button type="submit" name="reservar">Reservar</button>
+            </form>
+
+        </section>
+    </header>
+
+    <main>    
+        <!--PARA EMPRESAS (VANTAGENS CARDS)--> 
+        <section id="containerCardVantagens">
+            <div class="cardVantagens">
+                <i class="fa-solid fa-car-burst"></i>
+                <h2>Assistência 24 horas</h2>
+            </div>
+            <div class="cardVantagens">
+                <i class="fa-solid fa-money-bills"></i>
+                <h2>Preços competitivos</h2>
+            </div>
+            <div class="cardVantagens">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <h2>Faturamento direto pela empresa</h2>
+            </div>
+            <div class="cardVantagens">
+                <i class="fa-regular fa-calendar-days"></i>
+                <h2>Prazos de locação flexíveis</h2>
+            </div>
+            <div class="cardVantagens">
+                <i class="fa-solid fa-car-on"></i>
+                <h2>Renovação Periódica de frota</h2>
+            </div>
+            <div class="cardVantagens">
+                <i class="fa-regular fa-user"></i>
+                <h2>Atendimento personalizado</h2>
+            </div>            
+        </section>
+
+        <section id="container-card-requisitos">
+        <div class="card-requisitos">
+            <span class="material-symbols-outlined">
+                person_check
+            </span>
+            <h3>Idade e tempo de carteira</h3>
+            <p>O responsável pela locação deve ter 21 anos completos, ser habilitado há pelo menos 2 anos, e portar CNH dentro da validade (se vencida, mesmo dentro dos 30 dias permitidos pelo DETRAN, não é aceita).
+                Em alguns casos, dependendo da locadora essa regra pode ser flexibilizada, mantenha contato com nossa equipe.</p>
+            
+        </div>
+        <div class="card-requisitos">
+            <span class="material-symbols-outlined">
+                id_card
+                </span>
+            <h3>Documentos originais</h3>
+            <p>É preciso apresentar CNH original, nela constam também CPF e RG, ideal ter em mãos.
+                Em alguns casos é solicitado apresentar comprovante de residência atualizado.</p>
+            
+        </div>
+        <div class="card-requisitos">
+            <span class="material-symbols-outlined">
+                credit_card
+            </span>
+            <h3>Cartão de crédito</h3>
+            <p>Portar cartão de crédito (físico, virtual não é aceito) em nome do locatário, dentro da validade, com limite disponível para bloqueio da caução ou o valor total da locação (nos casos em que ultrapassar o valor da caução). Esse procedimento é indispensável para a retirada do veículo, não serão aceitas outras formas de garantia.
+                Algumas locadoras aceitam cartões emitidos por lojas ou financeiras, consulte exceções.</p>
+            
+        </div>
+        <div class="card-requisitos">
+            <span class="material-symbols-outlined">
+                credit_score
+            </span>
+            <h3>CPF sem restrição</h3>
+            <p>As empresas de locação consultam o CPF do locatário, e não liberam o carro em caso de apontamentos. Isso também se aplica aos condutores adicionais.
+                Algumas locadoras, desde que todos os outros requisitos sejam respeitados, dependendo da restrição, liberam a locação. Fale com nossa equipe e saiba quais.</p>
+            
+        </div>
+        <div class="card-requisitos">
+            <span class="material-symbols-outlined">
+                flight_land
+            </span>
+            <h3>Clientes Estrangeiros</h3>
+            <p>Estrangeiros devem apresentar o passaporte e a carteira de motorista do país de origem. É ideal que o motorista porte também a Permissão Internacional para Dirigir (PID).</p>
+            
+        </div>
+        </section>
+
+        <section id="container-card-promocoes">
+            <div class="card-promocoes">
+                <img src="" alt="imagem-carro-promocao-1">
+                <h2></h2>
+                <h4></h4>
+            </div>
+            <div class="card-promocoes">
+                <img src="" alt="imagem-carro-promocao-2">
+                <h2></h2>
+                <h4></h4>
+            </div>
+            <div class="card-promocoes">
+                <img src="" alt="imagem-carro-promocao-3">
+                <h2></h2>
+                <h4></h4>
+            </div>
+            
+        </section>
+
+        <div>
+            <!--LOCALIZAÇÃO-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.9878161916317!2d-51.17003992512873!3d-30.008506229609598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519776fbe97593f%3A0x1af65845dc42b5ff!2sR.%20Apar%C3%ADcio%20Mariense%2C%20211%20-%20Passo%20d&#39;Areia%2C%20Porto%20Alegre%20-%20RS%2C%2091030-370!5e0!3m2!1spt-BR!2sbr!4v1713312952161!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div>
+            <!--FALE CONOSCO (FORMULARIO)-->
+            <form action="">
+                <input type="email" name="email" size="40" placeholder="Digite seu e-mail">
+                <input type="number" name="telefone" size="25" placeholder="Digite seu telefone">
+                <textarea cols="25" rows="10" placeholder="Digite aqui sua mensagem" name="mensagem"></textarea>
+                <button type="submit" name="enviar">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <!--COPYRIGHT-->
+    </footer>
+    <script src="src/js/jquery-3.7.1.js"></script>
+    <script src="src/js/scrolltop.js"></script>
+    <script src="src/js/jquery.cycle2.min.js"></script>
+    <script src="src/js/jquery.cycle2.carousel.min.js"></script>
+</body>
+</html>

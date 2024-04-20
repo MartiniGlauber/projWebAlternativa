@@ -1,0 +1,26 @@
+@import url(header.css);
+@import url(paraEmpresas.css);
+
+:root{
+    --primary-color: #D98107;
+    --second-color: #846130;
+    --third-color: #0788D9;
+}
+*{
+    margin: 0;
+}
+body{
+    background-image: url(../imagens/fundo4.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h2,h3,p{
+    color: var(--primary-color);
+
+}
+.material-symbols-outlined{
+    color: var(--primary-color);
+    font-size: 90px;
+}
+
