@@ -1,0 +1,8 @@
+#voltar-topo{
+    font-size: 8vh;
+    color: var(--primary-color);
+    position: fixed;
+    bottom: 0.1em;
+    right: 1em;
+
+}

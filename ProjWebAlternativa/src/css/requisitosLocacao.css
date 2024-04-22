@@ -1,0 +1,28 @@
+#containerCardRequisitos{
+    width: 95%;
+    margin: auto;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    border: 0.1em solid;
+    color: var(--primary-color);
+}
+.cardRequisitos{
+    width:98%;
+    height: 98%;
+    margin: 0.2em;
+    border: 0.1em solid;
+    border-radius: 0.3em;
+    color: var(--primary-color);
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: self-start;
+}
+#imagemCardRequisitos{
+    font-size: 2em;
+
+}

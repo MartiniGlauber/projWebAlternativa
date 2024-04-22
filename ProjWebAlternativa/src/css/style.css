@@ -1,5 +1,11 @@
 @import url(header.css);
 @import url(paraEmpresas.css);
+@import url(banner.css);
+@import url(reserva.css);
+@import url(requisitosLocacao.css);
+@import url(footer.css);
+@import url(promocoes.css);
+
 
 :root{
     --primary-color: #D98107;
@@ -15,12 +21,21 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
-h2,h3,p{
-    color: var(--primary-color);
-
+h1,h3,p{
+    color: var(--primary-color);   
 }
-.material-symbols-outlined{
-    color: var(--primary-color);
-    font-size: 90px;
+h1{
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
 }
-
+h2{
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+h3{
+    font-size: 1.3em;
+}
