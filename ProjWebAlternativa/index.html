@@ -9,8 +9,10 @@
     <link href="src/css/style.css" rel="stylesheet">
     <!--FAVICON-->
     <link rel="icon" href="src/imagens/favicon-alternativa.png">
-    <!--GOOGLE ICONS-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--GOOGLE FONTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
     <!--AWESOME-->
     <link
       rel="stylesheet"
@@ -41,6 +43,7 @@
     </header>
 
     <main>
+        
         <section>
             <div>
                 <!--CARROSEL TIPOS CARROS-->
@@ -123,36 +126,45 @@
         <h1 id="requisitos-para-locacao">REQUISITOS PARA LOCAÇÃO</h1>
         <section id="containerCardRequisitos">
         <div class="cardRequisitos">
+            <div id="organizacaoCardRequisitos">
             <i class="fa-solid fa-user-check" id="imagemCardRequisitos"></i>
             <h3>Idade e tempo de carteira</h3>
+            </div>
             <p>O responsável pela locação deve ter 21 anos completos, ser habilitado há pelo menos 2 anos, e portar CNH dentro da validade (se vencida, mesmo dentro dos 30 dias permitidos pelo DETRAN, não é aceita).
                 Em alguns casos, dependendo da locadora essa regra pode ser flexibilizada, mantenha contato com nossa equipe.</p>
 
         </div>
         <div class="cardRequisitos">
+            <div id="organizacaoCardRequisitos">
             <i class="fa-regular fa-id-card" id="imagemCardRequisitos"></i>
-            <h3>Documentos originais</h3>
-            <p>É preciso apresentar CNH original, nela constam também CPF e RG, ideal ter em mãos.
-                Em alguns casos é solicitado apresentar comprovante de residência atualizado.</p>
+            <h3>Documentos<br> originais</h3>
+            </div>
+            <p>É preciso apresentar CNH original, nela constam também CPF e RG, ideal ter em mãos.Em alguns casos é solicitado apresentar comprovante de residência atualizado.</p>
 
         </div>
         <div class="cardRequisitos">
+            <div id="organizacaoCardRequisitos">
             <i class="fa-regular fa-credit-card" id="imagemCardRequisitos"></i>
             <h3>Cartão de crédito</h3>
+            </div>
             <p>Portar cartão de crédito (físico, virtual não é aceito) em nome do locatário, dentro da validade, com limite disponível para bloqueio da caução ou o valor total da locação (nos casos em que ultrapassar o valor da caução). Esse procedimento é indispensável para a retirada do veículo, não serão aceitas outras formas de garantia.
                 Algumas locadoras aceitam cartões emitidos por lojas ou financeiras, consulte exceções.</p>
 
         </div>
         <div class="cardRequisitos">
+            <div id="organizacaoCardRequisitos">
             <i class="fa-solid fa-circle-check" id="imagemCardRequisitos"></i>
             <h3>CPF sem restrição</h3>
+            </div>
             <p>As empresas de locação consultam o CPF do locatário, e não liberam o carro em caso de apontamentos. Isso também se aplica aos condutores adicionais.
                 Algumas locadoras, desde que todos os outros requisitos sejam respeitados, dependendo da restrição, liberam a locação. Fale com nossa equipe e saiba quais.</p>
 
         </div>
         <div class="cardRequisitos">
+            <div id="organizacaoCardRequisitos">
             <i class="fa-solid fa-plane-arrival" id="imagemCardRequisitos"></i>
-            <h3>Clientes Estrangeiros</h3>
+            <h3>Clientes<br> Estrangeiros</h3>
+            </div>
             <p>Estrangeiros devem apresentar o passaporte e a carteira de motorista do país de origem. É ideal que o motorista porte também a Permissão Internacional para Dirigir (PID).</p>
 
         </div>
@@ -161,17 +173,18 @@
         <section>
             <div>
                 <h1 id="promocoes">PROMOÇÕES</h1>
-                <section class="bannerPromocoes cycle-slideshow"    
-                data-cycle-fx="scrollHorz"
-                data-cycle-speed="1000"
-                data-cycle-prev="#prev"
-                data-cycle-next="#next">
+                    <div id="containerPromocoes">
+                        <section class="bannerPromocoes cycle-slideshow"    
+                        data-cycle-fx="scrollHorz"
+                        data-cycle-speed="1000"
+                        data-cycle-prev="#prevPromocoes"
+                        data-cycle-next="#nextPromocoes">
 
-                <img src="/src/imagens/10Off.png" alt="imagem 10% Desconto" class="bannerPromocoes">
-                <img src="/src/imagens/pacoteFds.png" alt="imagem Pacote final de semana" class="bannerPromocoes">
-                <img src="/src/imagens/indicacao.png" alt="imagem Desconto Indicação" class="bannerPromocoes">                       
-                </section>
-
+                        <img src="/src/imagens/10Off.png" alt="imagem 10% Desconto" class="bannerPromocoes">
+                        <img src="/src/imagens/pacoteFds.png" alt="imagem Pacote final de semana" class="bannerPromocoes">
+                        <img src="/src/imagens/indicacao.png" alt="imagem Desconto Indicação" class="bannerPromocoes">                       
+                        </section>
+                    </div>
                 <div id="controlesPromocoes">
                     <img src="src/imagens/seta-esquerda.png" alt="seta-esquerda" id="prevPromocoes">
                     <img src="src/imagens/seta-direita.png" alt="seta-direita" id="nextPromocoes">
@@ -182,19 +195,22 @@
         <div>
             <!--LOCALIZAÇÃO-->
             <h1 id="localizacao">LOCALIZAÇÃO</h1>
-
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.9878161916317!2d-51.17003992512873!3d-30.008506229609598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519776fbe97593f%3A0x1af65845dc42b5ff!2sR.%20Apar%C3%ADcio%20Mariense%2C%20211%20-%20Passo%20d&#39;Areia%2C%20Porto%20Alegre%20-%20RS%2C%2091030-370!5e0!3m2!1spt-BR!2sbr!4v1713312952161!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="containerLocalizacao">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.9878161916317!2d-51.17003992512873!3d-30.008506229609598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519776fbe97593f%3A0x1af65845dc42b5ff!2sR.%20Apar%C3%ADcio%20Mariense%2C%20211%20-%20Passo%20d&#39;Areia%2C%20Porto%20Alegre%20-%20RS%2C%2091030-370!5e0!3m2!1spt-BR!2sbr!4v1713312952161!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
 
         <div>
             <h1 id="fale-conosco">FALE CONOSCO</h1>
             <!--FALE CONOSCO (FORMULARIO)-->
-                <form action="">
+            <div>
+                <form action="" id="formularioFaleConosco">
                     <input type="email" name="email" size="40" placeholder="Digite seu e-mail">
-                    <input type="number" name="telefone" size="25" placeholder="Digite seu telefone">
+                    <input type="tel" name="telefone" size="25" placeholder="Digite seu telefone">
                     <textarea cols="25" rows="10" placeholder="Digite aqui sua mensagem" name="mensagem"></textarea>
                     <button type="submit" name="enviar">Enviar</button>
                 </form>
+            </div>   
         </div>
     </main>
 

@@ -19,10 +19,26 @@
     font-size: 1.2em;
     display: flex;
     flex-direction: row;
+    justify-content:space-between;
     flex-wrap: nowrap;
-    align-items: self-start;
+    text-align: left;
+    padding: 10px;
+}
+.cardRequisitos h3{
+    width:200px;
+    margin-left: 10px;
+
+}
+#organizacaoCardRequisitos{
+    display: flex;
+    align-items: center;
+    width:250px ;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    border: 0.1em solid;
+    
 }
 #imagemCardRequisitos{
     font-size: 2em;
-
 }

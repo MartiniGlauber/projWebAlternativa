@@ -5,12 +5,14 @@
 @import url(requisitosLocacao.css);
 @import url(footer.css);
 @import url(promocoes.css);
-
+@import url(localizacao.css);
+@import url(formularioFaleConosco.css);
 
 :root{
     --primary-color: #D98107;
     --second-color: #846130;
     --third-color: #0788D9;
+    --fonte-padrao: "Roboto Serif", serif;
 }
 *{
     margin: 0;
@@ -20,8 +22,9 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    font-family: var(--fonte-padrao);
 }
-h1,h3,p{
+h1,h2,h3,p{
     color: var(--primary-color);   
 }
 h1{
