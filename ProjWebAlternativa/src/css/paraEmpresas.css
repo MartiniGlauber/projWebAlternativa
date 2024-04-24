@@ -2,22 +2,23 @@
     width: 95%;
     margin: auto;
     padding: 1em;
-    display: flex;
-    flex-direction: row;
+    display: flex;    
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
-    border: 0.1em solid;
     color: var(--primary-color);
+    border: 0.1em solid;
 }
+
 .cardVantagens{
     width: 13%;
     margin-top: 0.5em;
     font-size: 0.8em;
     color: var(--primary-color);
-    border-radius: 0.5em;
-    border: 0.1em solid;
     text-align: center;
+    border: 0.1em solid;
+    padding: 1em;
+    
 }
 #imagemCardVantagens{
     font-size: 3.5em;
