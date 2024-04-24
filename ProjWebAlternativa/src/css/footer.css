@@ -7,11 +7,16 @@ footer{
     background-color:var(--third-color)
 }
 #voltar-topo{
-    font-size: 7.5vh;
+    font-size: 40px;
     color: var(--primary-color);
     position: fixed;
     bottom: 0.4em;
     right: 1em;
+    transition: 1s;
+}
+#voltar-topo:hover{
+    font-size: 50px;
+    transition: 1s;
 }
 .containerImagensFooter{
     display: flex;

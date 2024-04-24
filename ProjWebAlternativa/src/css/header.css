@@ -23,8 +23,16 @@ li{
     margin-left: 3vh;
 }
 a{
-    font-size: 1em;
+    font-size: 0.9em;
     text-decoration: none;
     font-weight: bold;
-    color: var(--third-color);    
+    color: var(--third-color);
+    transition: 0.5s;   
+}
+a:hover{
+    font-size: 1em;
+    text-decoration: underline;
+    font-weight: bold;
+    color: var(--third-color); 
+    transition: 0.5s;   
 }
