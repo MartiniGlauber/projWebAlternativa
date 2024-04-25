@@ -1,5 +1,5 @@
 #containerCardVantagens{
-    width: 95%;
+    /* width: 95%; */
     margin: auto;
     padding: 1em;
     display: flex; 
@@ -8,7 +8,7 @@
     justify-content: space-around;
     text-align: center;
     color: var(--primary-color);
-    border: 0.1em solid;
+    /* border: 0.1em solid; */
 }
 .divOrganizacaoCards{
     display: flex;
@@ -19,7 +19,7 @@
     font-size: 0.8em;
     color: var(--primary-color);
     text-align: center;
-    border: 0.1em solid;
+    /* border: 0.1em solid; */
     padding: 1em;
     
 }

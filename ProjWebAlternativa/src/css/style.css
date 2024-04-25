@@ -9,7 +9,7 @@
 @import url(formularioFaleConosco.css);
 
 :root{
-    --primary-color: #D98107;
+    --primary-color: #846130;
     --second-color: #846130;
     --third-color: #0788D9;
     --fonte-padrao: "Roboto Serif", serif;
@@ -39,11 +39,11 @@ h1:hover{
     transition: 1s;
 }
 h2{
-    font-size: 2em;
+    font-size: 1.7vw;
     margin-top: 1em;
     margin-bottom: 1em;
     text-align: center;
 }
 h3{
-    font-size: 3vw;
+    font-size: 1,7vw;
 }

@@ -64,27 +64,30 @@
                 border-radius: 4px;
             }
             #containerCardRequisitos{
-                flex-direction: column;
-                align-items: center;
-            }
-
+                display: grid;
+                align-content: center;
+            }            
             .copyright{
                 font-size: 5px;
             }
             #voltar-topo{
                 font-size: 20px;
             }
+            .texto-escondido{
+                display: none;
+            }
         }
         @media (max-width:320px) {
+            .logo{
+                width:22vw;
+                height: 30px;
+            }
             .menuLinks{
                 display: none;
             }
             .menuHamburguer{
                 display: block;
                 justify-content: center;
-            }
-            #botaoHamburguer{
-                color: var(--third-color);
             }
             .copyright{
                 font-size:6px;
@@ -100,14 +103,22 @@
                 width: 100%;
             }
             #containerCardRequisitos{
-                display: flex;
-                justify-content: center;
-            }
-            #containerReserva{
-                display: flex;
-                justify-content: center;
-            }
+                display: grid;
+                align-content: center;
+            } 
             
+            h1{
+                font-size: 7vw;
+            }
+            #selecaoLocal, #selecaoCarro, .dateTime{
+                width: 150px;
+                height: 29px;
+                border-radius: 4px;
+                display: grid;
+            }
+            label{
+                font-size: 3vw;
+            }
         }
     </style>
 
@@ -235,7 +246,7 @@
             <i class="fa-solid fa-user-check" id="imagemCardRequisitos"></i>
             <h3>Idade e tempo de carteira</h3>
             </div>
-            <p>O responsável pela locação deve ter 21 anos completos, ser habilitado há pelo menos 2 anos, e portar CNH dentro da validade (se vencida, mesmo dentro dos 30 dias permitidos pelo DETRAN, não é aceita).
+            <p id="texto" class="texto-escondido">O responsável pela locação deve ter 21 anos completos, ser habilitado há pelo menos 2 anos, e portar CNH dentro da validade (se vencida, mesmo dentro dos 30 dias permitidos pelo DETRAN, não é aceita).
                 Em alguns casos, dependendo da locadora essa regra pode ser flexibilizada, mantenha contato com nossa equipe.</p>
 
         </div>
@@ -244,7 +255,7 @@
             <i class="fa-regular fa-id-card" id="imagemCardRequisitos"></i>
             <h3>Documentos<br> originais</h3>
             </div>
-            <p>É preciso apresentar CNH original, nela constam também CPF e RG, ideal ter em mãos.Em alguns casos é solicitado apresentar comprovante de residência atualizado.</p>
+            <p id="texto" class="texto-escondido">É preciso apresentar CNH original, nela constam também CPF e RG, ideal ter em mãos.Em alguns casos é solicitado apresentar comprovante de residência atualizado.</p>
 
         </div>
         <div class="cardRequisitos">
@@ -252,7 +263,7 @@
             <i class="fa-regular fa-credit-card" id="imagemCardRequisitos"></i>
             <h3>Cartão de crédito</h3>
             </div>
-            <p>Portar cartão de crédito (físico, virtual não é aceito) em nome do locatário, dentro da validade, com limite disponível para bloqueio da caução ou o valor total da locação (nos casos em que ultrapassar o valor da caução). Esse procedimento é indispensável para a retirada do veículo, não serão aceitas outras formas de garantia.
+            <p id="texto" class="texto-escondido">Portar cartão de crédito (físico, virtual não é aceito) em nome do locatário, dentro da validade, com limite disponível para bloqueio da caução ou o valor total da locação (nos casos em que ultrapassar o valor da caução). Esse procedimento é indispensável para a retirada do veículo, não serão aceitas outras formas de garantia.
                 Algumas locadoras aceitam cartões emitidos por lojas ou financeiras, consulte exceções.</p>
 
         </div>
@@ -261,7 +272,7 @@
             <i class="fa-solid fa-circle-check" id="imagemCardRequisitos"></i>
             <h3>CPF sem restrição</h3>
             </div>
-            <p>As empresas de locação consultam o CPF do locatário, e não liberam o carro em caso de apontamentos. Isso também se aplica aos condutores adicionais.
+            <p id="texto" class="texto-escondido">As empresas de locação consultam o CPF do locatário, e não liberam o carro em caso de apontamentos. Isso também se aplica aos condutores adicionais.
                 Algumas locadoras, desde que todos os outros requisitos sejam respeitados, dependendo da restrição, liberam a locação. Fale com nossa equipe e saiba quais.</p>
 
         </div>
@@ -270,7 +281,7 @@
             <i class="fa-solid fa-plane-arrival" id="imagemCardRequisitos"></i>
             <h3>Clientes<br> Estrangeiros</h3>
             </div>
-            <p>Estrangeiros devem apresentar o passaporte e a carteira de motorista do país de origem. É ideal que o motorista porte também a Permissão Internacional para Dirigir (PID).</p>
+            <p id="texto" class="texto-escondido">Estrangeiros devem apresentar o passaporte e a carteira de motorista do país de origem. É ideal que o motorista porte também a Permissão Internacional para Dirigir (PID).</p>
 
         </div>
         </section>
@@ -342,6 +353,7 @@
 
     </footer>
     <script src="src/js/jquery-3.7.1.js"></script>
+    <script src="src/js/if.especial.js"></script>
     <script src="src/js/scrolltop.js"></script>
     <script src="src/js/jquery.cycle2.min.js"></script>
     <script src="src/js/jquery.cycle2.carousel.min.js"></script>
