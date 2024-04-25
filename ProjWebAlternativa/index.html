@@ -21,7 +21,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
+
     <style>
         @media (max-width:1090px) {
             nav{
@@ -30,43 +30,84 @@
             .cardVantagens{
                 width: 30%;
             }
-            .cardRequisitos p{
+            
+        }
+        @media (max-width:755px) {
+            .menuLinks{
                 display: none;
             }
+            .menuHamburguer{
+                display: block;
+                justify-content: center;
+            }
+            #botaoHamburguer{
+                color: var(--third-color);
+            }
+            .cardVantagens{
+                width: 22%;
+            }
+            h2{
+                font-size: 0.9em;
+            }
+                               
         }
         @media (max-width:500px) {
             .cardVantagens{
-                width: 100%;
+                width: 40%;
             }
             .cardRequisitos p{
-                display: none;
+                display:none;
             }
+            #selecaoLocal, #selecaoCarro, .dateTime{
+                width: 150px;
+                height: 29px;
+                border-radius: 4px;
+            }
+            #containerCardRequisitos{
+                flex-direction: column;
+                align-items: center;
+            }
+
             .copyright{
-                font-size: 10px;
-                justify-content: center;
+                font-size: 5px;
+            }
+            #voltar-topo{
+                font-size: 20px;
             }
         }
         @media (max-width:320px) {
-            .copyright{
-                font-size:6px;
+            .menuLinks{
+                display: none;
+            }
+            .menuHamburguer{
+                display: block;
                 justify-content: center;
             }
+            #botaoHamburguer{
+                color: var(--third-color);
+            }
+            .copyright{
+                font-size:6px;
+            }
             #voltar-topo{
-                font-size: 15px;
-            }
-            .controles{
-                font-size: 20px;
-            }
-            .controlesPromocoes{
-                font-size: 20px;
-            }
-            .bannerPromocoes{
-                width: 80%;
+                font-size: 10px;
             }
             #containerLocalizacao{
                 width: 80%;
                 height: 40vh;
             }
+            .cardVantagens{
+                width: 100%;
+            }
+            #containerCardRequisitos{
+                display: flex;
+                justify-content: center;
+            }
+            #containerReserva{
+                display: flex;
+                justify-content: center;
+            }
+            
         }
     </style>
 
@@ -74,11 +115,13 @@
 <body>
     <header>
             <!--LOGO-->
+            <div>
             <img src="src/imagens/logo.png" alt="Logo Alternativa Autolocadora" class="logo">
-
+            </div>
             <!--MENU DE NAVEGAÇÃO (LINKS)-->
             <nav>
-                <ul>
+                <button class="menuHamburguer" id="botaoHamburguer"><i class="fa-solid fa-bars"></i></button>
+                <ul class="menuLinks">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#reserva">RESERVA</a></li>
                     <li><a href="#para-empresas">VANTAGENS PARA EMPRESAS</a></li>
@@ -86,16 +129,17 @@
                     <li><a href="#promocoes">PROMOÇÕES</a></li>
                     <li><a href="#localizacao">LOCALIZAÇÃO</a></li>
                     <li><a href="#fale-conosco">FALE CONOSCO</a></li>
-                </ul>                   
+                </ul>
+                
             </nav>
     </header>
 
     <main>
-        
+
         <section>
             <div>
                 <!--CARROSEL TIPOS CARROS-->
-                <section class="banner cycle-slideshow"    
+                <section class="banner cycle-slideshow"
                 data-cycle-fx="scrollHorz"
                 data-cycle-speed="1000"
                 data-cycle-prev="#prev"
@@ -137,16 +181,16 @@
                 </select>
                 </div>
                 <label>CHECK-IN</label>
-                <div>                    
+                <div>
                 <input type="date" class="dateTime">
                 <input type="time" class="dateTime">
                 </div>
                 <label>CHECK-OUT</label>
-                <div>                    
+                <div>
                 <input type="date" class="dateTime">
                 <input type="time" class="dateTime">
                 </div>
-                
+
                 <button type="submit" name="reservar">Reservar</button>
             </form>
 
@@ -166,7 +210,7 @@
                 </div>
                 <div class="cardVantagens">
                 <i class="fa-solid fa-dollar-sign" id="imagemCardVantagens"></i>
-                <h2>Faturamento direto pela empresa</h2>
+                <h2>Faturamento direto <br>pela empresa</h2>
                 </div>
             <!-- </div> -->
             <!-- <div class="divOrganizacaoCards"> -->
@@ -182,7 +226,7 @@
                 <i class="fa-regular fa-user" id="imagemCardVantagens"></i>
                 <h2>Atendimento personalizado</h2>
             <!-- </div> -->
-            </div>         
+            </div>
         </section>
         <h1 id="requisitos-para-locacao">REQUISITOS PARA LOCAÇÃO</h1>
         <section id="containerCardRequisitos">
@@ -235,7 +279,7 @@
             <div>
                 <h1 id="promocoes">PROMOÇÕES</h1>
                     <div id="containerPromocoes">
-                        <section class="bannerPromocoes cycle-slideshow"    
+                        <section class="bannerPromocoes cycle-slideshow"
                         data-cycle-fx="scrollHorz"
                         data-cycle-speed="1000"
                         data-cycle-prev="#prevPromocoes"
@@ -243,8 +287,8 @@
 
                         <img src="/src/imagens/10Off.png" alt="imagem 10%Off" class="bannerPromocoes">
                         <img src="/src/imagens/pacoteFds.png" alt="imagem Pacote final de semana" class="bannerPromocoes">
-                        <img src="/src/imagens/indicacao.png" alt="imagem Desconto Indicação" class="bannerPromocoes">  
-                        <img src="/src/imagens/cartaVerde.png" alt="imagem carta verde" class="bannerPromocoes">                     
+                        <img src="/src/imagens/indicacao.png" alt="imagem Desconto Indicação" class="bannerPromocoes">
+                        <img src="/src/imagens/cartaVerde.png" alt="imagem carta verde" class="bannerPromocoes">
                         </section>
                     </div>
                 <div class="controlesPromocoes">
@@ -252,7 +296,7 @@
                     <i class="fa-solid fa-circle-arrow-right" id="nextPromocoes" title="Próxima promoção"></i>
                 </div>
 
-            </div>   
+            </div>
         </section>
         <div>
             <!--LOCALIZAÇÃO-->
@@ -272,40 +316,47 @@
                     <textarea cols="25" rows="10" placeholder="Digite aqui sua mensagem" name="mensagem"></textarea>
                     <button type="submit" name="enviar">Enviar</button>
                 </form>
-            </div>   
+            </div>
         </div>
     </main>
 
     <footer>
-        
+
         <div class="containerImagensFooter">
         <img src="/src/imagens/abla.png" alt="imagem Associação" class="imagemFooter">
         <img src="/src/imagens/sindloc.png" alt="imagem Sindicato" class="imagemFooter">
         <img src="/src/imagens/bandeirasCartoes.png" alt="cartões aceitos" class="imagemFooter">
         <div class="divRedesSociais">
         <a href="https://wa.me/555195182231" target="_blank">
-            
+
         <i class="fa-brands fa-whatsapp" id="redesSociais" title="WhatsApp"></i>
         </a>
         <a href="https://www.instagram.com/alternativaautolocadora" target="_blank">
         <i class="fa-brands fa-instagram" id="redesSociais" title="Instagram"></i>
         </div>
-        </a>   
+        </a>
         </div>
-        
+
         <p class="copyright">Desenvolvido por Glauber Martini. Todos os direitos reservados</p>
         <a href="#"><i class="fa-solid fa-circle-arrow-up" id="voltar-topo" title="Voltar ao topo"></i></a>
-        
+
     </footer>
     <script src="src/js/jquery-3.7.1.js"></script>
     <script src="src/js/scrolltop.js"></script>
     <script src="src/js/jquery.cycle2.min.js"></script>
     <script src="src/js/jquery.cycle2.carousel.min.js"></script>
-    <script>  
+    <script>
         $("#voltar-topo").click(function (){
-            $("html, body").animate({scrollTop: "0px"}, 800); 
+            $("html, body").animate({scrollTop: "0px"}, 800);
         });
     </script>
+    <script>
+        $(".menuHamburguer").click(function(){
+                $("nav").Toggle(800)
+            });
+        
+    </script>
     
+
 </body>
 </html>

@@ -1,6 +1,7 @@
 #containerReserva{
     display: flex;
     justify-content: center;
+    
 }
 #formularioReserva{
     display: flex;
@@ -14,14 +15,15 @@
     padding: 1em;
 }
 #selecaoLocal, #selecaoCarro, .dateTime{
-    width: 300px;
+    width: 280px;
     height: 40px;
     font-family: var(--fonte-padrao);
     border-radius: 7px;
+    align-items: center;
 }
 
 label{
     font-family: var(--fonte-padrao);
     font-weight: 600;
-    font-size: 1.6em;
+    font-size: 2vw;
 }

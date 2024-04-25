@@ -4,7 +4,7 @@
 }
 
 .controlesPromocoes{
-    height: 8vh;
+    height: 6vh;
     cursor: pointer;
     color: var(--primary-color);
     font-size: 40px;

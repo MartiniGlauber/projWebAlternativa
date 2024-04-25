@@ -11,10 +11,10 @@
 .cardRequisitos{
     width:98%;
     height: 98%;
-    margin: 0.2em;
+    margin: 0.1em;
     border-radius: 0.3em;
     color: var(--primary-color);
-    font-size: 1.2em;
+    font-size: 0.9em;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
