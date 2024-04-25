@@ -21,6 +21,54 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    
+    <style>
+        @media (max-width:1090px) {
+            nav{
+                font-size: 0.7em;
+            }
+            .cardVantagens{
+                width: 30%;
+            }
+            .cardRequisitos p{
+                display: none;
+            }
+        }
+        @media (max-width:500px) {
+            .cardVantagens{
+                width: 100%;
+            }
+            .cardRequisitos p{
+                display: none;
+            }
+            .copyright{
+                font-size: 10px;
+                justify-content: center;
+            }
+        }
+        @media (max-width:320px) {
+            .copyright{
+                font-size:6px;
+                justify-content: center;
+            }
+            #voltar-topo{
+                font-size: 15px;
+            }
+            .controles{
+                font-size: 20px;
+            }
+            .controlesPromocoes{
+                font-size: 20px;
+            }
+            .bannerPromocoes{
+                width: 80%;
+            }
+            #containerLocalizacao{
+                width: 80%;
+                height: 40vh;
+            }
+        }
+    </style>
 
 </head>
 <body>
@@ -60,8 +108,8 @@
                 <img src="src/imagens/pickup.png" alt="imagem pick ups" class="banner">
                 </section>
                 <div class="controles">
-                    <i class="fa-solid fa-circle-arrow-left" id="prev"></i>
-                    <i class="fa-solid fa-circle-arrow-right" id="next"></i>
+                    <i class="fa-solid fa-circle-arrow-left" id="prev" title="Categoria anterior"></i>
+                    <i class="fa-solid fa-circle-arrow-right" id="next" title="Próxima categoria"></i>
                 </div>
             </div>
         </section >
@@ -107,19 +155,22 @@
         <!--PARA EMPRESAS (VANTAGENS CARDS)-->
         <h1 id="para-empresas">VANTAGENS PARA EMPRESAS</h1>
         <section id="containerCardVantagens">
+            <!-- <div class="divOrganizacaoCards"> -->
                 <div class="cardVantagens">
                 <i class="fa-solid fa-car-burst" id="imagemCardVantagens"></i>
                 <h2>Assistência 24 horas</h2>
-            </div>
-            <div class="cardVantagens">
+                </div>
+                <div class="cardVantagens">
                 <i class="fa-solid fa-money-bills" id="imagemCardVantagens"></i>
                 <h2>Preços competitivos</h2>
-            </div>
-            <div class="cardVantagens">
+                </div>
+                <div class="cardVantagens">
                 <i class="fa-solid fa-dollar-sign" id="imagemCardVantagens"></i>
                 <h2>Faturamento direto pela empresa</h2>
-            </div>
-            <div class="cardVantagens">
+                </div>
+            <!-- </div> -->
+            <!-- <div class="divOrganizacaoCards"> -->
+                <div class="cardVantagens">
                 <i class="fa-regular fa-calendar-days" id="imagemCardVantagens"></i>
                 <h2>Prazos de <br>locação flexíveis</h2>
             </div>
@@ -130,6 +181,7 @@
             <div class="cardVantagens">
                 <i class="fa-regular fa-user" id="imagemCardVantagens"></i>
                 <h2>Atendimento personalizado</h2>
+            <!-- </div> -->
             </div>         
         </section>
         <h1 id="requisitos-para-locacao">REQUISITOS PARA LOCAÇÃO</h1>
@@ -195,9 +247,9 @@
                         <img src="/src/imagens/cartaVerde.png" alt="imagem carta verde" class="bannerPromocoes">                     
                         </section>
                     </div>
-                <div id="controlesPromocoes">
-                    <img src="src/imagens/seta-esquerda.png" alt="seta-esquerda" id="prevPromocoes">
-                    <img src="src/imagens/seta-direita.png" alt="seta-direita" id="nextPromocoes">
+                <div class="controlesPromocoes">
+                    <i class="fa-solid fa-circle-arrow-left" id="prevPromocoes" title="Promoção anterior"></i>
+                    <i class="fa-solid fa-circle-arrow-right" id="nextPromocoes" title="Próxima promoção"></i>
                 </div>
 
             </div>   
@@ -230,17 +282,30 @@
         <img src="/src/imagens/abla.png" alt="imagem Associação" class="imagemFooter">
         <img src="/src/imagens/sindloc.png" alt="imagem Sindicato" class="imagemFooter">
         <img src="/src/imagens/bandeirasCartoes.png" alt="cartões aceitos" class="imagemFooter">
+        <div class="divRedesSociais">
+        <a href="https://wa.me/555195182231" target="_blank">
+            
         <i class="fa-brands fa-whatsapp" id="redesSociais" title="WhatsApp"></i>
-        <i class="fa-brands fa-instagram" id="redesSociais" title="Instagram"></i>     
+        </a>
+        <a href="https://www.instagram.com/alternativaautolocadora" target="_blank">
+        <i class="fa-brands fa-instagram" id="redesSociais" title="Instagram"></i>
+        </div>
+        </a>   
         </div>
         
         <p class="copyright">Desenvolvido por Glauber Martini. Todos os direitos reservados</p>
-        <a href="#"><i class="fa-solid fa-circle-arrow-up" id="voltar-topo"></i></a>
+        <a href="#"><i class="fa-solid fa-circle-arrow-up" id="voltar-topo" title="Voltar ao topo"></i></a>
         
     </footer>
     <script src="src/js/jquery-3.7.1.js"></script>
     <script src="src/js/scrolltop.js"></script>
     <script src="src/js/jquery.cycle2.min.js"></script>
     <script src="src/js/jquery.cycle2.carousel.min.js"></script>
+    <script>  
+        $("#voltar-topo").click(function (){
+            $("html, body").animate({scrollTop: "0px"}, 800); 
+        });
+    </script>
+    
 </body>
 </html>

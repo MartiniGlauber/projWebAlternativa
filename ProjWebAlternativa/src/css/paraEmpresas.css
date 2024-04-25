@@ -2,17 +2,21 @@
     width: 95%;
     margin: auto;
     padding: 1em;
-    display: flex;    
+    display: flex; 
+    flex-direction: row;   
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
     color: var(--primary-color);
     border: 0.1em solid;
 }
+.divOrganizacaoCards{
+    display: flex;
+}
 
 .cardVantagens{
-    width: 13%;
-    margin-top: 0.5em;
+    width: 14%;
+    /* margin: 1vw; */
     font-size: 0.8em;
     color: var(--primary-color);
     text-align: center;

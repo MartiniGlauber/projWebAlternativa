@@ -1,6 +1,4 @@
 header{
-    margin-left: 0.5em;
-    margin-right: 0.5em;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -8,7 +6,7 @@ header{
     font-family: var(--fonte-padrao);
 }
 .logo{
-    width: 10em;
+    width: 9vw;
 
 }
 nav{
@@ -20,7 +18,7 @@ ul{
 }
 li{
     display: inline;
-    margin-left: 3vh;
+    /* margin-left: 3vh; */
 }
 a{
     font-size: 0.9em;

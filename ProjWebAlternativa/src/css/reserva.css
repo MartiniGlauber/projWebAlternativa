@@ -1,3 +1,7 @@
+#containerReserva{
+    display: flex;
+    justify-content: center;
+}
 #formularioReserva{
     display: flex;
     flex-direction: column;

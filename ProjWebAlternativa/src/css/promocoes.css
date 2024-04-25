@@ -3,14 +3,25 @@
     justify-content: center;
 }
 
-#controlesPromocoes img{
-    width: 3em;
+.controlesPromocoes{
+    height: 8vh;
     cursor: pointer;
     color: var(--primary-color);
-}
-#controlesPromocoes{
+    font-size: 40px;
+    transition: 1s;
     margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5em;    
     display: flex;
     justify-content:center;
+}
+.controlesPromocoes :first-child{
+    margin-right: 0.5em;
+}
+#prevPromocoes:hover{
+    font-size: 50px;
+    transition: 1s;
+}
+#nextPromocoes:hover{
+    font-size: 50px;
+    transition: 1s;
 }
