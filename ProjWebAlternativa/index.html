@@ -32,31 +32,50 @@
             }
             
         }
-        @media (max-width:755px) {
-            .menuLinks{
-                display: none;
-            }
-            .menuHamburguer{
-                display: block;
-                justify-content: center;
-            }
+        @media (min-width:776px) {
             #botaoHamburguer{
-                color: var(--third-color);
+                display: none;   
             }
+            
+        }
+
+        
+        @media (max-width:755px) {           
             .cardVantagens{
                 width: 22%;
             }
             h2{
                 font-size: 0.9em;
             }
-                               
+
+            .menuLinks{ 
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-right: 22px;
+            }
+            header{
+                display: flex;
+                flex-direction: column;
+            }
+            ul li a{
+                margin-top: 10px;
+                font-size: 20px;
+            }     
+            ul li a:hover{
+                font-size: 25px;
+            }   
+            #containerLogo{
+                display: flex;
+                justify-content: center;
+            }  
         }
-        @media (max-width:500px) {
+        @media (max-width:600px) {
             .cardVantagens{
                 width: 40%;
             }
             .cardRequisitos p{
-                display:none;
+                display:none;   
             }
             #selecaoLocal, #selecaoCarro, .dateTime{
                 width: 150px;
@@ -73,9 +92,7 @@
             #voltar-topo{
                 font-size: 20px;
             }
-            .texto-escondido{
-                display: none;
-            }
+
         }
         @media (max-width:320px) {
             .logo{
@@ -85,10 +102,7 @@
             .menuLinks{
                 display: none;
             }
-            .menuHamburguer{
-                display: block;
-                justify-content: center;
-            }
+            
             .copyright{
                 font-size:6px;
             }
@@ -123,15 +137,16 @@
     </style>
 
 </head>
-<body>
-    <header>
-            <!--LOGO-->
-            <div>
+<body><div id="containerLogo">
             <img src="src/imagens/logo.png" alt="Logo Alternativa Autolocadora" class="logo">
             </div>
+    <header>
+            <!--LOGO-->
+            
             <!--MENU DE NAVEGAÇÃO (LINKS)-->
+            <i class="fa-solid fa-bars" id="botaoHamburguer"></i>
             <nav>
-                <button class="menuHamburguer" id="botaoHamburguer"><i class="fa-solid fa-bars"></i></button>
+                
                 <ul class="menuLinks">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#reserva">RESERVA</a></li>
@@ -193,13 +208,13 @@
                 </div>
                 <label>CHECK-IN</label>
                 <div>
-                <input type="date" class="dateTime">
-                <input type="time" class="dateTime">
+                <input type="date" class="dateTime" required>
+                <input type="time" class="dateTime" required>
                 </div>
                 <label>CHECK-OUT</label>
                 <div>
-                <input type="date" class="dateTime">
-                <input type="time" class="dateTime">
+                <input type="date" class="dateTime" required>
+                <input type="time" class="dateTime" required>
                 </div>
 
                 <button type="submit" name="reservar">Reservar</button>
@@ -322,9 +337,9 @@
             <!--FALE CONOSCO (FORMULARIO)-->
             <div>
                 <form action="" id="formularioFaleConosco">
-                    <input type="email" name="email" size="40" placeholder="Digite seu e-mail">
-                    <input type="tel" name="telefone" size="25" placeholder="Digite seu telefone">
-                    <textarea cols="25" rows="10" placeholder="Digite aqui sua mensagem" name="mensagem"></textarea>
+                    <input type="email" name="email" size="40" placeholder="Digite seu e-mail" required>
+                    <input type="tel" name="telefone" size="25" placeholder="Digite seu telefone" required>
+                    <textarea cols="25" rows="10" placeholder="Digite aqui sua mensagem" name="mensagem" required></textarea>
                     <button type="submit" name="enviar">Enviar</button>
                 </form>
             </div>
@@ -353,7 +368,6 @@
 
     </footer>
     <script src="src/js/jquery-3.7.1.js"></script>
-    <script src="src/js/if.especial.js"></script>
     <script src="src/js/scrolltop.js"></script>
     <script src="src/js/jquery.cycle2.min.js"></script>
     <script src="src/js/jquery.cycle2.carousel.min.js"></script>
@@ -362,13 +376,20 @@
             $("html, body").animate({scrollTop: "0px"}, 800);
         });
     </script>
+    
     <script>
-        $(".menuHamburguer").click(function(){
-                $("nav").Toggle(800)
+        $("#botaoHamburguer").click(function(){
+                $("nav").toggle(800)
             });
         
     </script>
-    
+    <script>
+        $(window).resize(function(){
+            if ($(window).width() > 750); {
+                $("nav").show();
+            }
+        })
+    </script>
 
 </body>
 </html>

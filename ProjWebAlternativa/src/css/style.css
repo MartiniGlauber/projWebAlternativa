@@ -10,7 +10,7 @@
 
 :root{
     --primary-color: #846130;
-    --second-color: #846130;
+    --second-color: #D98107;
     --third-color: #0788D9;
     --fonte-padrao: "Roboto Serif", serif;
 }
@@ -46,4 +46,24 @@ h2{
 }
 h3{
     font-size: 1,7vw;
+}
+
+
+
+
+
+
+nav{
+    display: flex;
+    justify-content: center;  
+}
+
+ul{
+    margin-left:-40px;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+
 }

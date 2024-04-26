@@ -1,7 +1,7 @@
 header{
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:center;
     align-items: center;
     font-family: var(--fonte-padrao);
 }
@@ -9,10 +9,6 @@ header{
     width: 10vw;
     top: 0;
     left: 0;
-}
-nav{
-    text-align:end;
-    align-content: center;
 }
 
 li{
@@ -30,14 +26,16 @@ a:hover{
     font-size: 1em;
     text-decoration: underline;
     font-weight: bold;
-    color: var(--third-color); 
+    color: var(--primary-color); 
     transition: 0.5s;   
-}
-.menuHamburguer{
-    display: none;
-    
 }
 .menuLinks{
     display: flex;
     list-style: none;
+}
+#botaoHamburguer{
+    color: var(--primary-color);
+    font-size: 1.8em;
+    margin: auto;
+    cursor: pointer;
 }
