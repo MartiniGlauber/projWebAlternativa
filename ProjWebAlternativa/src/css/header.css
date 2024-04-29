@@ -1,39 +1,93 @@
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: center;
-    font-family: var(--fonte-padrao);
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--fonte-padrao);
 }
-.logo{
-    width: 10vw;
+.logo {
+  width: 10vw;
 }
 
-li{
-    display: inline;
-    margin-left: 20px;
+li {
+  display: inline;
+  margin-left: 20px;
 }
-a{
-    font-size: 1vw;
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--primary-color);
-    transition: 0.5s;   
+a {
+  font-size: 0.8em;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--primary-color);
+  transition: 0.5s;
 }
-a:hover{
-    font-size: 1em;
-    text-decoration: underline;
-    font-weight: bold;
-    color: var(--primary-color); 
-    transition: 0.5s;   
+a:hover {
+  font-size: 1em;
+  text-decoration: underline;
+  font-weight: bold;
+  color: var(--primary-color);
+  transition: 0.5s;
 }
-.menuLinks{
+.menuLinks {
+  display: flex;
+  list-style: none;
+}
+#botaoHamburguer {
+  color: var(--primary-color);
+  font-size: 1.8em;
+  margin: auto;
+  cursor: pointer;
+}
+/*TAMANHO MINIMO 776PX */
+@media (min-width: 776px) {
+  #botaoHamburguer {
+    display: none;
+  }
+}
+/* TAMANHO MAXIMO 775 PX*/
+@media (max-width: 775px) {
+  .menuLinks {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 22px;
+  }
+  header {
     display: flex;
-    list-style: none;
+    flex-direction: column;
+  }
+  ul li a {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  ul li a:hover {
+    font-size: 25px;
+  }
+  .containerLogo {
+    display: flex;
+    justify-content: center;
+  }
 }
-#botaoHamburguer{
-    color: var(--primary-color);
-    font-size: 1.8em;
-    margin: auto;
-    cursor: pointer;
+/*TAMANHO MAXIMO 600PX*/
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+  .logo {
+    width: 13vw;
+    margin-top: 4px;
+    margin-bottom: 7px;
+  }
+}
+/*TAMANHO MAXIMO 320PX*/
+@media (max-width:320px) {
+    .logo {
+        width: 22vw;
+        height: 30px;
+    }
+
+    .menuLinks {
+        display: none;
+    }    
 }

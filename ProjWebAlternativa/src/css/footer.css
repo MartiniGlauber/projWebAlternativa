@@ -46,3 +46,22 @@ footer{
     padding: 0.2em;
     color: white;
 }
+/*TAMANHO MAX 600PX*/
+@media (max-width: 600px) {
+    .copyright {
+        font-size: 9px;
+    }
+    #voltar-topo {
+        font-size: 20px;
+    }
+}
+/*TAMANHO MAX 320PX*/
+@media (max-width:320px) {
+    .copyright {
+        font-size: 6px;
+    }
+
+    #voltar-topo {
+        font-size: 10px;
+    }
+}

@@ -1,4 +1,4 @@
-#containerCardRequisitos{
+.containerCardRequisitos{
     width: 95%;
     margin: auto;
     padding: 1em;
@@ -27,7 +27,7 @@
     margin-left: 10px;
 
 }
-#organizacaoCardRequisitos{
+.organizacaoCardRequisitos{
     display: flex;
     align-items: center;
     width:250px ;
@@ -37,4 +37,30 @@
 }
 #imagemCardRequisitos{
     font-size: 2em;
+}
+/*TAMANHO MAX 600PX*/
+@media (max-width:600px) {
+    .texto-escondido{
+        display: none;
+    }
+    .containerCardRequisitos {
+        display: grid;
+        align-content: center;
+    }
+    .cardRequisitos{
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+    .cardRequisitos p {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+}
+/*TAMANHO MAX 320PX*/
+@media (max-width:320px) {
+    .containerCardRequisitos {
+        display: grid;
+        align-content: center;
+    }
 }

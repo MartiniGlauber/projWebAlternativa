@@ -21,168 +21,13 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <style>
-        @media (max-width:1090px) {
-            nav {
-                font-size: 0.7em;
-            }
-
-            .cardVantagens {
-                width: 30%;
-            }
-
-        }
-
-        @media (min-width:776px) {
-            #botaoHamburguer {
-                display: none;
-            }
-
-        }
-
-
-        @media (max-width:755px) {
-            .cardVantagens {
-                width: 22%;
-            }
-
-            h2 {
-                font-size: 0.9em;
-            }
-
-            .menuLinks {
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                margin-right: 22px;
-            }
-
-            header {
-                display: flex;
-                flex-direction: column;
-            }
-
-            ul li a {
-                margin-top: 10px;
-                font-size: 20px;
-            }
-
-            ul li a:hover {
-                font-size: 25px;
-            }
-
-            #containerLogo {
-                display: flex;
-                justify-content: center;
-            }
-        }
-
-        @media (max-width:600px) {
-            .cardVantagens {
-                width: 40%;
-            }
-            header{
-                flex-direction: column;
-            }
-            .logo{
-                width: 13vw;
-                margin-top: 4px;
-                margin-bottom: 7px;
-            }
-            .texto-escondido {
-                display: none;
-            }
-            .cardRequisitos{
-                flex-direction: column;
-                align-items: center;
-                cursor: pointer;
-            }
-            .cardRequisitos p {
-                width: 80%;
-                margin-bottom: 1rem;
-            }
-
-            #selecaoLocal,
-            #selecaoCarro,
-            .dateTime {
-                width: 150px;
-                height: 29px;
-                border-radius: 4px;
-            }
-
-            #containerCardRequisitos {
-                display: grid;
-                align-content: center;
-            }
-
-            .copyright {
-                font-size: 5px;
-            }
-
-            #voltar-topo {
-                font-size: 20px;
-            }
-
-        }
-
-        @media (max-width:320px) {
-            .logo {
-                width: 22vw;
-                height: 30px;
-            }
-
-            .menuLinks {
-                display: none;
-            }
-
-            .copyright {
-                font-size: 6px;
-            }
-
-            #voltar-topo {
-                font-size: 10px;
-            }
-
-            #containerLocalizacao {
-                width: 80%;
-                height: 40vh;
-            }
-
-            .cardVantagens {
-                width: 100%;
-            }
-
-            #containerCardRequisitos {
-                display: grid;
-                align-content: center;
-            }
-
-            h1 {
-                font-size: 7vw;
-            }
-
-            #selecaoLocal,
-            #selecaoCarro,
-            .dateTime {
-                width: 150px;
-                height: 29px;
-                border-radius: 4px;
-                display: grid;
-            }
-
-            label {
-                font-size: 3vw;
-            }
-        }
-    </style>
-
 </head>
 
 <body>
     
     <header>
         <!--LOGO-->
-        <div id="containerLogo">
+        <div class="containerLogo">
             <img src="src/imagens/logo.png" alt="Logo Alternativa Autolocadora" class="logo">
         </div>
         <!--MENU DE NAVEGAÇÃO (LINKS)-->
@@ -223,12 +68,12 @@
             </div>
         </section>
 
-        <section id="cointanerReserva">
-            <h1 id="reserva">RESERVA</h1>
+        <section class="cointanerReserva">
+            <h1>RESERVA</h1>
             <!--MENU DATA LOCACAO-->
-            <form action="" id="formularioReserva">
+            <form action="" class="formularioReserva">
                 <div>
-                    <select id="selecaoLocal">
+                    <select class="selecaoLocal">
                         <option>--Retire em--</option>
                         <option>No Aeroporto</option>
                         <option>Na Rodoviária</option>
@@ -236,7 +81,7 @@
                         <option>Na Minha Residência</option>
                         <option>Outros</option>
                     </select>
-                    <select id="selecaoCarro">
+                    <select class="selecaoCarro">
                         <option>--Escolha o modelo--</option>
                         <option>Compactos</option>
                         <option>Hatch 1.0</option>
@@ -262,9 +107,9 @@
         </section>
 
         <!--PARA EMPRESAS (VANTAGENS CARDS)-->
-        <h1 id="para-empresas">VANTAGENS PARA EMPRESAS</h1>
-        <section id="containerCardVantagens">
-            <!-- <div class="divOrganizacaoCards"> -->
+        <h1>VANTAGENS PARA EMPRESAS</h1>
+        <section class="containerCardVantagens">
+            
             <div class="cardVantagens">
                 <i class="fa-solid fa-car-burst" id="imagemCardVantagens"></i>
                 <h2>Assistência 24 horas</h2>
@@ -277,8 +122,7 @@
                 <i class="fa-solid fa-dollar-sign" id="imagemCardVantagens"></i>
                 <h2>Faturamento direto <br>pela empresa</h2>
             </div>
-            <!-- </div> -->
-            <!-- <div class="divOrganizacaoCards"> -->
+            
             <div class="cardVantagens">
                 <i class="fa-regular fa-calendar-days" id="imagemCardVantagens"></i>
                 <h2>Prazos de <br>locação flexíveis</h2>
@@ -290,13 +134,13 @@
             <div class="cardVantagens">
                 <i class="fa-regular fa-user" id="imagemCardVantagens"></i>
                 <h2>Atendimento personalizado</h2>
-                <!-- </div> -->
+                
             </div>
         </section>
-        <h1 id="requisitos-para-locacao">REQUISITOS PARA LOCAÇÃO</h1>
-        <section id="containerCardRequisitos">
+        <h1>REQUISITOS PARA LOCAÇÃO</h1>
+        <section class="containerCardRequisitos">
             <div class="cardRequisitos">
-                <div id="organizacaoCardRequisitos">
+                <div class="organizacaoCardRequisitos">
                     <i class="fa-solid fa-user-check" id="imagemCardRequisitos"></i>
                     <h3>Idade e tempo de carteira</h3>
                 </div>
@@ -308,7 +152,7 @@
 
             </div>
             <div class="cardRequisitos">
-                <div id="organizacaoCardRequisitos">
+                <div class="organizacaoCardRequisitos">
                     <i class="fa-regular fa-id-card" id="imagemCardRequisitos"></i>
                     <h3>Documentos<br> originais</h3>
                 </div>
@@ -317,7 +161,7 @@
 
             </div>
             <div class="cardRequisitos">
-                <div id="organizacaoCardRequisitos">
+                <div class="organizacaoCardRequisitos">
                     <i class="fa-regular fa-credit-card" id="imagemCardRequisitos"></i>
                     <h3>Cartão de crédito</h3>
                 </div>
@@ -329,7 +173,7 @@
 
             </div>
             <div class="cardRequisitos">
-                <div id="organizacaoCardRequisitos">
+                <div class="organizacaoCardRequisitos">
                     <i class="fa-solid fa-circle-check" id="imagemCardRequisitos"></i>
                     <h3>CPF sem restrição</h3>
                 </div>
@@ -340,7 +184,7 @@
 
             </div>
             <div class="cardRequisitos">
-                <div id="organizacaoCardRequisitos">
+                <div class="organizacaoCardRequisitos">
                     <i class="fa-solid fa-plane-arrival" id="imagemCardRequisitos"></i>
                     <h3>Clientes<br> Estrangeiros</h3>
                 </div>
@@ -353,8 +197,8 @@
         <!--PROMOÇÔES-->
         <section>
             <div>
-                <h1 id="promocoes">PROMOÇÕES</h1>
-                <div id="containerPromocoes">
+                <h1>PROMOÇÕES</h1>
+                <div class="containerPromocoes">
                     <section class="bannerPromocoes cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-speed="1000"
                         data-cycle-prev="#prevPromocoes" data-cycle-next="#nextPromocoes">
 
@@ -374,8 +218,8 @@
         </section>
         <div>
             <!--LOCALIZAÇÃO-->
-            <h1 id="localizacao">LOCALIZAÇÃO</h1>
-            <div id="containerLocalizacao">
+            <h1>LOCALIZAÇÃO</h1>
+            <div class="containerLocalizacao">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.9878161916317!2d-51.17003992512873!3d-30.008506229609598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519776fbe97593f%3A0x1af65845dc42b5ff!2sR.%20Apar%C3%ADcio%20Mariense%2C%20211%20-%20Passo%20d&#39;Areia%2C%20Porto%20Alegre%20-%20RS%2C%2091030-370!5e0!3m2!1spt-BR!2sbr!4v1713312952161!5m2!1spt-BR!2sbr"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -384,10 +228,10 @@
         </div>
 
         <div>
-            <h1 id="fale-conosco">FALE CONOSCO</h1>
+            <h1>FALE CONOSCO</h1>
             <!--FALE CONOSCO (FORMULARIO)-->
             <div>
-                <form action="" id="formularioFaleConosco">
+                <form action="" class="formularioFaleConosco">
                     <input type="email" name="email" size="40" placeholder="Digite seu e-mail" required>
                     <input type="tel" name="telefone" size="25" placeholder="Digite seu telefone" required>
                     <textarea cols="25" rows="10" placeholder="Digite aqui sua mensagem" name="mensagem"
@@ -434,8 +278,8 @@
         $("#botaoHamburguer").click(function () {
             $("nav").toggle(800)
         });
-
     </script>
+    
     <script>
         $(window).resize(function () {
             if ($(window).width() > 750); {

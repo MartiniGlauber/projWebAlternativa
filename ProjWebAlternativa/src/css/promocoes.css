@@ -1,13 +1,16 @@
-#containerPromocoes{
+.containerPromocoes{
     display: flex;
     justify-content: center;
 }
-
+.bannerPromocoes{
+    width: 25rem;
+    border-radius: 1rem;
+}
 .controlesPromocoes{
     height: 6vh;
     cursor: pointer;
     color: var(--primary-color);
-    font-size: 40px;
+    font-size: 35px;
     transition: 1s;
     margin-top: 0.5em;
     margin-bottom: 0.5em;    
@@ -18,10 +21,10 @@
     margin-right: 0.5em;
 }
 #prevPromocoes:hover{
-    font-size: 50px;
+    font-size: 41px;
     transition: 1s;
 }
 #nextPromocoes:hover{
-    font-size: 50px;
+    font-size: 41px;
     transition: 1s;
 }
