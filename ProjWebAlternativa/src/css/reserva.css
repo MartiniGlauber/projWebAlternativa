@@ -22,6 +22,7 @@
   border-radius: 7px;
   align-items: center;
   cursor: pointer;
+  margin-bottom: 5px;
 }
 
 label {
@@ -29,19 +30,44 @@ label {
   font-weight: 600;
   font-size: 2vw;
 }
+/*TAMANHO MAX 718PX*/
+@media (max-width:718px) {
+  .selecaoLocal,
+  .selecaoCarro,
+  .dateTime {
+    margin-left: 20vw;
+  }
+}
+
 /*TAMANHO MAX 600PX*/
 @media (max-width: 600px) {
   .selecaoLocal,
   .selecaoCarro,
   .dateTime {
-    width: 150px;
+    width: 168px;
     height: 29px;
     border-radius: 4px;
   }
+  
 }
+/*TAMANHO MAX 437PX*/
+@media (max-width:437px) {
+  .selecaoLocal,
+  .selecaoCarro,
+  .dateTime {
+    margin-left: 20vw;
+  }
+}
+
 /*TAMANHO MAX 320PX*/
 @media (max-width:320px) {
   label {
       font-size: 3vw;
   }
+  .selecaoLocal,
+  .selecaoCarro,
+  .dateTime {
+    margin-left: 14vw;
+  }
+   
 }

@@ -37,7 +37,7 @@
             <ul class="menuLinks">
                 <li><a href="#">HOME</a></li>
                 <li><a href="#reserva">RESERVA</a></li>
-                <li><a href="#para-empresas">VANTAGENS PARA EMPRESAS</a></li>
+                <li><a href="#vantagens-para-empresas">VANTAGENS PARA EMPRESAS</a></li>
                 <li><a href="#requisitos-para-locacao">REQUISITOS PARA LOCAÇÃO</a></li>
                 <li><a href="#promocoes">PROMOÇÕES</a></li>
                 <li><a href="#localizacao">LOCALIZAÇÃO</a></li>
@@ -69,7 +69,7 @@
         </section>
 
         <section class="cointanerReserva">
-            <h1>RESERVA</h1>
+            <h1 id="reserva">RESERVA</h1>
             <!--MENU DATA LOCACAO-->
             <form action="" class="formularioReserva">
                 <div>
@@ -107,7 +107,7 @@
         </section>
 
         <!--PARA EMPRESAS (VANTAGENS CARDS)-->
-        <h1>VANTAGENS PARA EMPRESAS</h1>
+        <h1 id="vantagens-para-empresas">VANTAGENS PARA EMPRESAS</h1>
         <section class="containerCardVantagens">
             
             <div class="cardVantagens">
@@ -137,7 +137,7 @@
                 
             </div>
         </section>
-        <h1>REQUISITOS PARA LOCAÇÃO</h1>
+        <h1 id="requisitos-para-locacao">REQUISITOS PARA LOCAÇÃO</h1>
         <section class="containerCardRequisitos">
             <div class="cardRequisitos">
                 <div class="organizacaoCardRequisitos">
@@ -197,7 +197,7 @@
         <!--PROMOÇÔES-->
         <section>
             <div>
-                <h1>PROMOÇÕES</h1>
+                <h1 id="promocoes">PROMOÇÕES</h1>
                 <div class="containerPromocoes">
                     <section class="bannerPromocoes cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-speed="1000"
                         data-cycle-prev="#prevPromocoes" data-cycle-next="#nextPromocoes">
@@ -218,7 +218,7 @@
         </section>
         <div>
             <!--LOCALIZAÇÃO-->
-            <h1>LOCALIZAÇÃO</h1>
+            <h1 id="localizacao">LOCALIZAÇÃO</h1>
             <div class="containerLocalizacao">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.9878161916317!2d-51.17003992512873!3d-30.008506229609598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519776fbe97593f%3A0x1af65845dc42b5ff!2sR.%20Apar%C3%ADcio%20Mariense%2C%20211%20-%20Passo%20d&#39;Areia%2C%20Porto%20Alegre%20-%20RS%2C%2091030-370!5e0!3m2!1spt-BR!2sbr!4v1713312952161!5m2!1spt-BR!2sbr"
@@ -228,7 +228,7 @@
         </div>
 
         <div>
-            <h1>FALE CONOSCO</h1>
+            <h1 id="fale-conosco">FALE CONOSCO</h1>
             <!--FALE CONOSCO (FORMULARIO)-->
             <div>
                 <form action="" class="formularioFaleConosco">
@@ -268,24 +268,26 @@
     <script src="src/js/jquery.cycle2.min.js"></script>
     <script src="src/js/jquery.cycle2.carousel.min.js"></script>
     <script src="src/js/toggleText.js"> </script>
-    <script>
+    <!-- <script>
         $("#voltar-topo").click(function () {
             $("html, body").animate({ scrollTop: "0px" }, 800);
         });
-    </script>
+    </script> -->
 
     <script>
         $("#botaoHamburguer").click(function () {
             $("nav").toggle(800)
         });
     </script>
-    
+
     <script>
         $(window).resize(function () {
-            if ($(window).width() > 750); {
+            if ($(window).width() < 750){
+                $("nav").hide();
+            } else {
                 $("nav").show();
             }
-        })
+        });
     </script>
 
 </body>

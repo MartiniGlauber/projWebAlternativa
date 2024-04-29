@@ -17,6 +17,9 @@
 *{
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-image: url(../imagens/fundo4.jpg);
     background-repeat: no-repeat;
@@ -62,13 +65,22 @@ ul li{
 }
 /*TAMANHO MAX 755PX*/
 @media (max-width:755px) {
+    h1{
+        font-size: 2.2rem;
+    } 
+    h1:hover{
+        font-size: 2.4rem;
+    } 
     h2{
-        font-size: 0.9em;
+        font-size: 0.9rem;
     }    
 }
 /*TAMANHO MAXIMO 320PX*/
 @media (max-width:320px) {
     h1{
         font-size: 7vw;
+    }    
+    h1:hover{
+        font-size: 9vw;
     }    
 }

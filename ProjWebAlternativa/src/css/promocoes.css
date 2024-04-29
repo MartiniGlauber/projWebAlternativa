@@ -8,10 +8,7 @@
 }
 .controlesPromocoes{
     height: 6vh;
-    cursor: pointer;
     color: var(--primary-color);
-    font-size: 35px;
-    transition: 1s;
     margin-top: 0.5em;
     margin-bottom: 0.5em;    
     display: flex;
@@ -20,11 +17,21 @@
 .controlesPromocoes :first-child{
     margin-right: 0.5em;
 }
+
+#prevPromocoes{
+    font-size: 2.6rem;
+    transition: 0.8s;
+    cursor: pointer;
+}
 #prevPromocoes:hover{
-    font-size: 41px;
-    transition: 1s;
+    font-size: 2.8rem;
+    transition: 0.8s;
+}
+#nextPromocoes{
+    font-size: 2.6rem;
+    transition: 0.8s;
 }
 #nextPromocoes:hover{
-    font-size: 41px;
-    transition: 1s;
+    font-size: 2.8rem;
+    transition: 0.8s;
 }
